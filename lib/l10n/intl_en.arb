@@ -1,0 +1,18 @@
+{
+  "ourTitle": "Learn Theme in Flutter",
+  "@ourTitle": {
+    "description": "Title for app."
+  },
+  "ourText": "Hi I hope you're doing well",
+  "@ourText": {
+    "description": ""
+  },
+  "changeTheme": "Change Theme",
+  "@changeTheme": {
+    "description": ""
+  },
+  "changeLocale": "Change Locale",
+  "@changeLocale": {
+    "description": ""
+  }
+}
