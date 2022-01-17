@@ -79,7 +79,7 @@ static ThemeData themeData(ThemeData themeData, BuildContext context,
 As you can see we passed flutter`ThemeData.light()` and `ThemeData.dark()` with our `colorScheme` and `_faTextTheme` and `_textTheme` based on the localization, and finally used `themeData.copyWith` to change what we need. 
 
 We have two main properties that we have to customize, otherwise our theme is nothing but a MaterialTheme:
-- `ColorSchema`'s:
+- `ColorSchema` based on light and dark theme:
 ```dart
 static ColorScheme lightColorScheme = const ColorScheme.dark().copyWith(
     primary: const Color(0xFFB93C5D),
@@ -175,7 +175,7 @@ static TextTheme _faTextTheme(TextTheme textTheme, Color color) {
       .apply(bodyColor: color);
 }
 ```
-This is the place where we need to import our custom fonts. We used a `GoogleFont` package for our English text and a Persian font for our Persian text. Just don't remember to put your font in the `pubspec.yaml`:
+This is the place where we need to import our custom fonts. We used a `GoogleFont` package for our English text and a Persian font for our Persian text. Just don't forget to put your font in the `pubspec.yaml`:
 ```yaml
 assets:
   - fonts/google_fonts/
@@ -193,7 +193,7 @@ fonts:
     fonts:
       - asset: fonts/IRANSans-Bold.ttf
 ```
-and don't remember if you have multiple `FontWeight`, you should also add the other big fonts like `IRANSans-SemiBold` and `IRANSans-Bold`
+and don't forget if you have multiple `FontWeight`, you should also add the other big fonts like `IRANSans-SemiBold` and `IRANSans-Bold`
 
 Everything else should be defined by your requirements in Figma like
 ```dart
